@@ -1,6 +1,4 @@
-debug = false
-checkNewVersion = true
-logLevel = "ERROR"
+logLevel = "DEBUG"
 defaultEntryPoints = ["https","http"]
 
 [entryPoints]
@@ -17,8 +15,8 @@ address = ":8080"
 
 [docker]
 endpoint = "unix:///var/run/docker.sock"
-domain = "traefik.example.com"
-swarmmode true
+domain = "docker.local"
+swarmmode = true
 watch = true
 exposedbydefault = false
 
